@@ -1,6 +1,7 @@
 services:
   phpserver:
-    image: php:7.2-apache
+    image: meuphp
+    build: ./build
     volumes:
       - ./www:/var/www/html
   database:
